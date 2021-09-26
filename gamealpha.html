@@ -4,10 +4,14 @@
   </head>
   <body>
     <p>Café Déstruction by BirdDev</p>
-    <h2 id=coffeeDisplay></h2>
+    <h2>You have <span id="coffee">0</span> coffees in your stock</h2>
+     <script>
+      var coffee = 0
+    
+      function add(amount) {
+        coffee = coffee + amount;
+        document.getElementById("coffee").innerHTML = coffee;
+      }
+    </script>
   </body>
-  <script>
-    var coffee = 0
-    document.getElementById("coffeeDisplay").innerHTML = coffee;
-  </script>
 </html>
