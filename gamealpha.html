@@ -5,10 +5,11 @@
   <body>
     <p>Café Déstruction by BirdDev</p>
     <h2>Coffee: <span id="coffee">0</span></h2>
-    <button onclick="add(1)">Make Coffee</button>
+    <button onclick="add(1)">Make Coffee</button> 
      <script>
         var coffee = 0
         var money = 0
+        var demand = 0
         function add(amount) {
           coffee = coffee + amount;
           document.getElementById("coffee").innerHTML = coffee;
