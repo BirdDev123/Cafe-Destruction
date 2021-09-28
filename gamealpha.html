@@ -5,8 +5,8 @@
   <body>
     <p>Café Déstruction by BirdDev</p>
     <h2>Coffee: <span id="coffee">0</span></h2>
-    <p>Coffee Beans: <span id="coffeeBeans"></span></p>
-    <button onclick="add(1)">Make Coffee</button>
+    <p>Coffee Beans: <span id="coffeeBeans">0</span></p>
+    <button onclick="add(1)", onclick="loseBeans(5)">Make Coffee</button>
      <script>
         var coffee = 0
         var coffeeBeans = 300
@@ -15,7 +15,7 @@
           document.getElementById("coffee").innerHTML = coffee;
         }
         function loseBeans(amount) {
-          coffeeBeans = coffeeBeans - 5;
+          coffeeBeans = coffeeBeans - amount;
           document.getElementById("coffeeBeans").innerHTML = coffeeBeans;
         }
      </script>
