@@ -5,15 +5,27 @@
   </head>
   <body>
     <p>Café Déstruction by BirdDev</p>
-    <h2>Coffee Beans: <span id="coffeeBeans">0</span></h2>
-    <p>Coffee: <span id="coffee">0</span></p>
-    <button onclick="add(1)">Farm Coffee Beans</button>
+    <h2>Coffee: <span id="coffee">0</span></h2>
+    <p>Money: <span id="money">0</span></p>
+    <button onclick="add(1)">Make Coffee</button>
     <script>
         var coffee = 0
-        var coffeeBeans = 0
+        var money = 0
+        var moneyMake = 1
         function add(amount) {
-          coffeeBeans = coffeeBeans + amount;
-          document.getElementById("coffeeBeans").innerHTML = coffeeBeans;
+          coffee = coffee + amount;
+          document.getElementById("coffee").innerHTML = coffee;
+        }
+      
+      
+        function makeMoney() {
+          if (coffeeBeans >= moneyMake): {
+            coffee = coffee - moneyMake;
+            money = money + 1
+            
+            document.getElementById("coffee").innerHTML = coffee;
+            document.getElementById("money").innerHTML = money;
+          }
         }
      </script>
   </body>
