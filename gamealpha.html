@@ -6,6 +6,7 @@
     <p>Café Déstruction by BirdDev</p>
     <h2>Coffee: <span id="coffee">0</span></h2>
     <p>Coffee Beans: <span id="coffeeBeans">0</span></p>
+    <p>Money: <span id="money">0</span</p>
     <button onclick="add(1)">Make Coffee</button> 
     <button onclick="sell(1)">Sell Coffee</button>
      <script>
@@ -21,7 +22,7 @@
        function sell(amount) {
           coffee = coffee - amount;
           money = money + amount;
-          document.getElementById("coffee").innerHTML = coffee;
+          document.getElementById("money").innerHTML = money;
         }
      </script>
   </body>
