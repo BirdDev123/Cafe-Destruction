@@ -15,6 +15,7 @@
         var demand = 0
         function add(amount) {
           coffee = coffee + amount;
+          coffeeBeans = coffeeBeans - 5;
           document.getElementById("coffee").innerHTML = coffee;
         }
        function sell(amount) {
