@@ -17,15 +17,12 @@
           document.getElementById("coffee").innerHTML = coffee;
         }
         function sell(amount) {
-          if (coffee > 0)
             money = money + amount;
             coffee = coffee - amount;
             document.getElementById("coffee").innerHTML = coffee;
             document.getElementById("money").innerHTML = money;
-          else
-            money = money + 0;
-            coffee = coffee - 0;
-        }
+            if (coffee = -1):
+              coffee = coffee + 1;
      </script>
   </body>
 </html>
