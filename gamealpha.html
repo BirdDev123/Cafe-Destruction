@@ -5,14 +5,15 @@
   </head>
   <body>
     <p>Café Déstruction by BirdDev</p>
-    <h2>Coffee: <span id="coffee">0</span></h2>
-    <button onclick="add(1)">Make Coffee</button>
+    <h2>Coffee Beans: <span id="coffeeBeans">0</span></h2>
+    <p>Coffee: <span id="coffee">0</span></p>
+    <button onclick="add(1)">Farm Coffee Beans</button>
     <script>
         var coffee = 0
-        var money = 0
+        var coffeeBeans = 0
         function add(amount) {
-          coffee = coffee + amount;
-          document.getElementById("coffee").innerHTML = coffee;
+          coffeeBeans = coffeeBeans + amount;
+          document.getElementById("coffeeBeans").innerHTML = coffeeBeans;
         }
      </script>
   </body>
